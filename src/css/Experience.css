@@ -1,8 +1,9 @@
 .Experience-Container {
-  height: 70vh;
+  min-height: 70vh;
   padding-top: 60px;
   text-align: center;
   margin-top: 8%;
+  box-sizing: border-box;
 }
 
 .img-container {
@@ -16,13 +17,26 @@
 
 .tech-stack-img {
   width: 100px;
+  transition: transform 0.3s ease;
 }
 
+.tech-stack-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
-
-
+/* Responsive Styles */
 @media (max-width: 600px) {
+  .Experience-Container {
+    padding-top: 40px;
+    margin-top: 12%;
+  }
+
   .tech-stack-img {
-    width: 50px;
+    width: 60px;
+  }
+
+  .img-container {
+    gap: 15px;
   }
 }
