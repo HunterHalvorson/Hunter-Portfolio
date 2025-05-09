@@ -1,0 +1,28 @@
+.Experience-Container {
+  height: 70vh;
+  padding-top: 60px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 5%;
+}
+
+.tech-stack-img {
+  width: 100px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .tech-stack-img {
+    width: 50px;
+  }
+}
